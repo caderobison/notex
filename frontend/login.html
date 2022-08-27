@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="loginStyle.css">
+    <script src="./validate_login.js"></script>
+    <!--<script  src="https://cdn.jsdelivr.net/npm/latex.js/dist/latex.js"></script> This solution to getting index.js methods accessable
+    in login_validation sucks but its the only one that is working for me-->
+    <!-- <script src="./index.js"></script> -->
+</head>
+
+<body style="background-color: white ;">
+    <div class="login_box">
+        <span class="notexLogo">N<sup>o</sup>T<sub>e</sub>X</span>
+        <form id="login">
+            <div class="account_field" id="usernameDiv">
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" id="username" name="username" required />
+                <p id="usernameLabel" class="error"></p>
+            </div>
+
+            <div class="account_field" id="passwordDiv">
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" id="password" name="password" required />
+                <p id="passwordLabel" class="error"></p>
+            </div>
+
+            <input type="button" value="Login" class="button" onclick="login()" />
+            <br>
+
+            <input type="button" value="Sign up" class="button" onclick="window.location.href='signup.html'" />
+            <br>
+            <a href="https://google.com" class="center">Forgot Password</a>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="loginStyle.css">
+    <script  src="./validate_signup.js"></script>
+    <!--<script  src="https://cdn.jsdelivr.net/npm/latex.js/dist/latex.js"></script> This solution to getting index.js methods accessable
+    in login_validation sucks but its the only one that is working for me-->
+    <!-- <script src="./index.js"></script> -->
+</head>
+
+<body style="background-color: white ;">
+    <div class="login_box">
+        <span class="notexLogo">N<sup>o</sup>T<sub>e</sub>X</span>
+        <form id="login">
+
+            <div class="account_field" id="firstDiv">
+                <label for="first"><b>First Name</b></label>
+                <input type="text" placeholder="Enter First Name" id="first" name="first" required />
+                <p id="firstLabel" class="error"></p>
+                
+            </div>
+
+            <div class="account_field" id="lastDiv">
+
+                <label for="last"><b>Last Name</b></label>
+                <input type="text" placeholder="Enter Last Name" id="last" name="last" required />
+                <p id="lastLabel" class="error"></p>
+            </div>
+
+            <div class="account_field" id="usernameDiv">
+
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" id="username" name="username" required />
+                <p id="usernameLabel" class="error"></p>
+            </div>
+
+            <div class="account_field" id="passwordDiv">
+
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" id="password" name="password" required />
+                <p id="passwordLabel" class="error"></p>
+            </div>
+
+            <div class="account_field" id="confirmDiv">
+
+                <label for="confirm"><b>Confirm Password</b></label>
+                <input type="password" placeholder="Enter Password" id="confirm" name="confirm" required />
+                <p id="confirmLabel" class="error"></p>
+            </div>
+
+            <div class="account_field" id="emailDiv">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" id="email" name="email" required />
+                <p id="emailLabel" class="error"></p>
+            </div>
+
+            <br>
+            <br>
+            <input type="button" value="Sign Up" class="button" onclick="signup()"/>
+            <br>
+            <a href="login.html" class="center">Already have an account? Login</a>
+        </form>
+    </div>
+</body>
+
+</html>

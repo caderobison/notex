@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NoTeX Studio</title>
+    <script src="validate_login.js"></script>
+    <script src="validate_signup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/latex.js/dist/latex.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div id='menu'>
+    <span class="notexLogo">N<sup>o</sup>T<sub>e</sub>X</span>
+    <select name="files" id="files">
+        <option value="file1">file1</option>
+        <option value="file2">file2</option>
+        <option value="file3">file3</option>
+        <option value="file4">file4</option>
+    </select>
+    <button type="button" id="loadFile">Load File</button>
+    <button type="button" id="newFile">New File</button>
+    <button type="button" id="btnSave" onclick="addFile()">Save</button>
+    <button type="button" id="btnExportTeX">Export TeX</button>
+    <button type="button" id="signIn" onclick="location.href='login.html'">Login</button>
+</div>
+<input type="text" data-block-kind='Title' class="userSpace topSpace" id="Title" placeholder="Title" oninput='logSubmit()'/>
+<br>
+<input type="text" data-block-kind='Date' class="userSpace topSpace" placeholder="Date" id="Date" oninput='logSubmit()'/> <!-- added -->
+<br>
+<input type="text" data-block-kind='Author' class="userSpace topSpace" placeholder="Author" id="Author" oninput='logSubmit()'/> <!--added-->
+<div class="layout">
+    <div id="console" class="element-left">
+        <table id="stack">
+        </table>
+    </div>
+    <iframe id="latexWindow" class="element-right"></iframe>
+</div>
+<ul>
+    <li><button type="button" title="Section" class="select Section" onclick="add('Section','')" style="font-family: 'Roboto', sans-serif; font-size: larger">S</button></li>
+    <li><button type="button" title="Subsection" class="select Subsection"onclick="add('Subsection','')" style="font-family: 'Roboto', sans-serif;">s</button></li>
+    <li><button type="button" title="Abstract" class="select Abstract"onclick="add('Abstract','')"><i class="material-icons">font_download</i></button></li>
+    <li><button type="button" title="Center" class="select Center"onclick="add('Center','')"><i class="material-icons">format_align_center</i></button></li>
+    <li><button type="button" title="Paragraph" class="select Paragraph"onclick="add('Paragraph','')"><i class="material-icons">text_fields</i></button></li>
+    <li><button type="button" title="Equation" class="select Equation" onclick="add('Equation','')"><i class="material-icons">calculate</i></button></li>
+    <li><button type="button" title="Numbered List" class="select Enum" onclick="add_list('Enum','')"><i class="material-icons">format_list_numbered</i></button></li>
+    <li><button type="button" title="Bullet Points" class="select Itemize" onclick="add_list('Itemize','')"><i class="material-icons">format_list_bulleted</i></button></li>
+</ul>
+<script src="index.js"></script>
+</body>
+</html>

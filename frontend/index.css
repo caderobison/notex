@@ -1,0 +1,174 @@
+iframe{
+    border:none;
+}
+#Title{
+    height:4vh;
+}
+#Date{
+    height:3vh;
+}
+#Author{
+    height: 3vh;
+}
+#menu {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;height: 7vh;
+    background: black;
+}
+#console {
+    background-color: lightgray;
+}
+
+.vertical-center {
+    /* margin: 0;
+    /* position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+    display: inline-block;
+    vertical-align: middle;
+    /* padding-bottom: px; */
+}
+.layout{
+    height: 75vh;
+    display: flex;
+    border: solid black 1px;
+}
+.element-left {
+    width: 50%;
+    overflow-y: auto;
+    height: auto;
+    display: flex; flex-direction: column;
+}
+.element-right {
+    flex-grow: 1;
+}
+table, th, td {
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin:0;
+}
+
+input{
+    color: black;
+}
+textarea{
+    color: black;
+    resize: none;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    line-height: 20px;
+    overflow: hidden;
+}
+.Section{
+    background: #f94144;
+    color: White;
+
+}
+.Abstract{
+    background: #f8961e;
+    color: White;
+}
+.Paragraph{
+    background: #90be6d;
+    color: White;
+}
+.Center{
+    background: #f9c74f;
+    color: White;
+}
+.Subsection{
+    background: #f3722c;
+    color: White;
+}
+.Equation{
+    background : #43aa8b;
+    color: white;
+}
+.Enum{
+    background : #4d908e;
+    color: White;
+}
+.Itemize{
+    background: #577590;
+    color: White;
+}
+.topSpace{
+    font-size: medium;
+    width:99%;
+    border: none;
+}
+#Title{
+    font-size: xx-large;
+}
+#Title:focus{
+
+}
+#Date{
+    font-size: large;
+}
+
+.notexLogo {
+    font-family: Times, "Times New Roman", serif;
+    color: white;
+    font-size: xxx-large;
+    letter-spacing: 2px;
+}
+
+.notexLogo sup {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.75em;
+    vertical-align: 0.2em;
+    margin-left: -0.2em;
+    margin-right: -0.15em;
+    color: white;
+}
+
+.notexLogo sub {
+    text-transform: uppercase;
+    vertical-align: -0.5ex;
+    margin-left: -0.1667em;
+    margin-right: -0.125em;
+    font-size: 1em;
+    color: white;
+}
+ul {
+    position: fixed;
+    bottom: 0;
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+    height:7vh;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    width: 12.5%;
+    height:100%;
+}
+
+li button {
+    font-size: large;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: none;
+
+}
+
+li button:hover {
+    filter: brightness(0.85);
+}
+

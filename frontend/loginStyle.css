@@ -1,0 +1,95 @@
+
+input ,  
+label {
+    display: block;
+    width: 300px;
+}
+
+.error{
+    font-size: small;
+    color: rgb(143, 1, 1);
+    margin-top: 0em; 
+    margin-bottom: 0em;
+}
+
+.account_field{
+    border-radius: 10px;
+    display:inline-block;
+    padding: 5px;
+    margin-top: 4px;
+    margin-right:0px;
+    background-color: lightgray/*rgba(255, 143, 143, 0.753)*/;
+}
+
+.login_box {
+    background-color: lightgray;
+    border-radius: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    width: 320px;
+    padding: 10px;
+    /* border: 3px solid black; */
+    /* text-align: center; */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.center {
+    display: block;
+    margin: auto;
+    /* width: 300px; */
+    padding: 10px;
+    /* border: 3px solid black; */
+    text-align: center;
+
+}
+
+.button {
+    background-color: Blue;
+    border-radius: 40px;
+    color: White;
+    width: 70%;
+    border: none;
+    padding: 14px 28px;
+    cursor: pointer;
+    text-align: center;
+    font-size: medium;
+    margin: auto;
+    /* border: 3px solid black; */
+}
+.notexLogo {
+    font-family: Times, "Times New Roman", serif;
+    color: black;
+    font-size: 500%;
+    /* border: 3px solid black; */
+    display: block;
+    margin: auto;
+    /* width: 300px; */
+    padding: 10px;
+    /* border: 3px solid black; */
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.notexLogo sup {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.75em;
+    vertical-align: 0.2em;
+    margin-left: -0.2em;
+    margin-right: -0.1em;
+    color: black;
+}
+
+.notexLogo sub {
+    text-transform: uppercase;
+    vertical-align: -0.5ex;
+    margin-left: -0.1667em;
+    margin-right: -0.125em;
+    font-size: 1em;
+    color: black;
+}
